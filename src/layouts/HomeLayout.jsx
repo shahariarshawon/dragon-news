@@ -4,7 +4,7 @@ import { Outlet } from "react-router";
 
 const HomeLayout = () => {
   return (
-    <div>
+    <div className="bg-base-200">
       <header>
         <Header></Header>
       </header>

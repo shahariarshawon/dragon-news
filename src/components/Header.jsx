@@ -1,10 +1,12 @@
+import { format } from 'date-fns'
 import React from 'react'
 
 export default function Header() {
   return (
-    <div>
-      <h3 className='text-6xl text-center py-10 font-bold'>The Dragon News</h3>
-      <p className='text-center text-xl pb-5'>The latest news will be found here</p>
+    <div className='flex flex-col justify-center items-center  gap-5 py-10'>
+      <h3 className='text-6xl   font-bold text-secondary'>The Dragon News</h3>
+      <p className=' text-xl '>The latest news will be found here</p>
+      <p> {format( new Date(), "EEEE, MMMM MM, yyyy")} </p>
     </div>
   )
 }
